@@ -15,7 +15,7 @@
   <description>Central Config server for spring Apps</description>
 
   <properties>
-    <spring.boot.version>2.2.6.RELEASE</spring.boot.version>
+    <spring.boot.version>2.3.0.RELEASE</spring.boot.version>
     <postgres.version>42.2.12</postgres.version>
     <liquibase.version>3.8.5</liquibase.version>
     <swagger.version>2.9.2</swagger.version>
@@ -121,6 +121,7 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>${spring.boot.version}</version>
         <configuration>
           <jvmArguments>
             -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005
